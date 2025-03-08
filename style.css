@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    width: 100%;
+}
+
+.ul1{
+    padding-left: 15px;
+}
+
+
+ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+nav ul li a::before{
+    content: "";
+    width: 100%;
+    background-color: orangered;
+    height: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+
+    transform: scalex(0);
+    transition: .5s;
+}
+
+nav ul li a:hover::before{
+    transform: scaleX(1);
+}
+
+
+header{
+    background-image: url(./images/banner.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    border-bottom: orangered solid 2px;
+}
+header::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(16, 10, 10, 0.415);
+    display: block;
+    position: absolute;
+}
+
+.banner-content{
+    position: absolute;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.button:hover{
+    background-color: transparent;
+}
+
+.menus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    height: 75px;
+}
+
+.card{
+    width: 200px;
+    height: 350px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.card:hover{
+    transform: translateY(-40px);
+    
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.ul1{
+    padding-left: 15px;
+}
+
+ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    transition: color 0.5s ease;
+}
+
+nav ul li a::before{
+    content: "";
+    width: 100%;
+    background-color: orangered;
+    height: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transform: scalex(0);
+    transition: transform 0.5s ease;
+}
+
+nav ul li a:hover{
+    color: orangered;
+}
+
+nav ul li a:hover::before{
+    transform: scaleX(1);
+}
+
+header{
+    background-image: url(./images/banner.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    border-bottom: orangered solid 2px;
+    position: relative;
+}
+
+header::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(16, 10, 10, 0.415);
+    display: block;
+    position: absolute;
+}
+
+.banner-content{
+    position: absolute;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 1000;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    margin-top: 5px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.menus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    height: 75px;
+}
+
+.models{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 250px;
+    height: 400px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 20px;
+}
+
+.img{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.menus1{
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+span{
+    color: orangered;
+}
+
+.card1{
+    width: 250px;
+    height: 400px;
+}
+
+.img1{
+    width: 100%;
+}
+
+.cards1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+    color: #ffffff;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+
+ol{
+    list-style-type: none;
+}
+
+.ol{
+    margin-top: 20px;
+}
